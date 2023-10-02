@@ -50,7 +50,6 @@ Route::group(['middleware'=>'admin_auth'],function(){
 
     //color Route
     Route::get('admin/color',[ColorController::class,'index'])->name('admin.color');
-    Route::get('admin/color',[ColorController::class,'index'])->name('admin_color');
     Route::get('admin/manage_color',[ColorController::class,'manage_color'])->name('admin.manage_color');
     Route::get('admin/color/edit/{id}',[ColorController::class,'manage_color'])->name('admin.color.edit');
     Route::post('admin/color/manage_color_process',[ColorController::class,'manage_color_process'])->name('admin.color.manage_color_process');
